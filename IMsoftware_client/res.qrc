@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/龙.png</file>
+    </qresource>
+</RCC>

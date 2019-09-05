@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,8 +13,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    logwidget.cpp \
+    mythread.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    logwidget.h \
+    mythread.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    logwidget.ui
+
+RESOURCES += \
+    res.qrc
