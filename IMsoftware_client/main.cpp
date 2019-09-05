@@ -12,7 +12,8 @@ int main(int argc, char *argv[])
     thread->start();
 
     QObject::connect(thread,SIGNAL(send_message(QString)),&w,SLOT(deal_recv_message(QString)));
-    QObject::connect(&w,SIGNAL(send_ipandport(QString,QString)),thread,SLOT(deal_recv_ipandport(QString,QString)));
+    QObject::connect(thread,SIGNAL(connect_error()),&w,SLOT(deal_connect_error()));
+
 
     return a.exec();
 }

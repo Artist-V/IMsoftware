@@ -13,6 +13,7 @@ public:
     void run();
 signals:
     void send_message(QString);
+    void connect_error();
 
 public slots:
     void deal_connect();    //处理连接成功

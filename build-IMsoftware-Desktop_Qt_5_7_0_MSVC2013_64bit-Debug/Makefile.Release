@@ -794,7 +794,10 @@ release\logwidget.obj: ..\IMsoftware_client\logwidget.cpp ../IMsoftware_client/l
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore\qfiledevice.h \
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui\qvector2d.h \
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui\qtouchdevice.h \
-		ui_logwidget.h
+		ui_logwidget.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets\QMessageBox \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets\qmessagebox.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets\qdialog.h
 
 release\mythread.obj: ..\IMsoftware_client\mythread.cpp ../IMsoftware_client/mythread.h \
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore\QThread \

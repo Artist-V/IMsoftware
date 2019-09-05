@@ -1,5 +1,6 @@
 ﻿#include "logwidget.h"
 #include "ui_logwidget.h"
+#include <QMessageBox>
 
 LogWidget::LogWidget(QWidget *parent) :
     QWidget(parent),
@@ -22,8 +23,8 @@ void LogWidget::deal_recv_message(QString s)
     ui->textBrowser->append(s);
 }
 
-
-void LogWidget::on_pushButton_clicked()
+void LogWidget::deal_connect_error()
 {
-    emit send_ipandport(ui->IP_lineEdit->text(),ui->PORT_lineEdit->text());
+    QMessageBox::warning(this,"异常","与服务器连接异常!",QMessageBox::Ok);
 }
+
