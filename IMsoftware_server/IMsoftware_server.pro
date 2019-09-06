@@ -17,7 +17,8 @@ SOURCES += main.cpp\
     mythread.cpp
 
 HEADERS  += widget.h \
-    mythread.h
+    mythread.h \
+    head.h
 
 FORMS    += widget.ui
 

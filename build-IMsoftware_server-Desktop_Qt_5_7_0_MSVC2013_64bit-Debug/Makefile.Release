@@ -56,7 +56,8 @@ OBJECTS       = release\main.obj \
 		release\moc_mythread.obj
 
 DIST          =  ..\IMsoftware_server\widget.h \
-		..\IMsoftware_server\mythread.h ..\IMsoftware_server\main.cpp \
+		..\IMsoftware_server\mythread.h \
+		..\IMsoftware_server\head.h ..\IMsoftware_server\main.cpp \
 		..\IMsoftware_server\widget.cpp \
 		..\IMsoftware_server\mythread.cpp
 QMAKE_TARGET  = IMsoftware_server
@@ -272,6 +273,15 @@ release\moc_widget.cpp: C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets\QWidget 
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore\qfiledevice.h \
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui\qvector2d.h \
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui\qtouchdevice.h \
+		..\IMsoftware_server\mythread.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore\QThread \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore\qthread.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\QTcpServer \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\qtcpserver.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\qabstractsocket.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\qhostaddress.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\QTcpSocket \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\qtcpsocket.h \
 		..\IMsoftware_server\widget.h \
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\moc.exe
 	C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\moc.exe $(DEFINES) -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.7.0/5.7/msvc2013_64/mkspecs/win32-msvc2013 -ID:/qt/IMsoftware/IMsoftware_server -IC:/Qt/Qt5.7.0/5.7/msvc2013_64/include -IC:/Qt/Qt5.7.0/5.7/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.7.0/5.7/msvc2013_64/include/QtGui -IC:/Qt/Qt5.7.0/5.7/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.7.0/5.7/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.7.0/5.7/msvc2013_64/include/QtCore -I. ..\IMsoftware_server\widget.h -o release\moc_widget.cpp
@@ -583,6 +593,15 @@ release\widget.obj: ..\IMsoftware_server\widget.cpp ../IMsoftware_server/widget.
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore\qfiledevice.h \
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui\qvector2d.h \
 		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui\qtouchdevice.h \
+		../IMsoftware_server/mythread.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore\QThread \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore\qthread.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\QTcpServer \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\qtcpserver.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\qabstractsocket.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\qhostaddress.h \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\QTcpSocket \
+		C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtNetwork\qtcpsocket.h \
 		ui_widget.h
 
 release\mythread.obj: ..\IMsoftware_server\mythread.cpp ../IMsoftware_server/mythread.h \

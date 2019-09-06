@@ -13,16 +13,42 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    logwidget.cpp \
-    mythread.cpp
+    mythread.cpp \
+    widget/logwidget.cpp \
+    widget/mainform.cpp \
+    widget/regwidget.cpp \
+    ui/collapseviewitem.cpp \
+    ui/litteriem.cpp \
+    ui/colorpickform.cpp \
+    ui/moveableframelesswindow.cpp \
+    ui/collapseview.cpp \
+    src/config.cpp \
+    chatform.cpp
 
-HEADERS  += mainwindow.h \
-    logwidget.h \
-    mythread.h
+HEADERS  += \
+    mythread.h \
+    widget/logwidget.h \
+    widget/mainform.h \
+    widget/regwidget.h \
+    head.h \
+    ui/collapseviewitem.h \
+    ui/litteriem.h \
+    ui/colorpickform.h \
+    ui/moveableframelesswindow.h \
+    ui/collapseview.h \
+    src/singleton.h \
+    src/config.h \
+    chatform.h
 
-FORMS    += mainwindow.ui \
-    logwidget.ui
+FORMS    += \
+    widget/logwidget.ui \
+    widget/mainform.ui \
+    widget/regwidget.ui \
+    ui/collapseviewitem.ui \
+    ui/litteriem.ui \
+    ui/colorpickform.ui \
+    ui/collapseview.ui \
+    chatform.ui
 
 RESOURCES += \
     res.qrc

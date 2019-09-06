@@ -24,6 +24,11 @@ void MyThread::run()
     this->exec();
 }
 
+void MyThread::CloseClient()
+{
+    Tsocket->close();
+}
+
 void MyThread::deal_connect()
 {
     qDebug() << "connect success!";

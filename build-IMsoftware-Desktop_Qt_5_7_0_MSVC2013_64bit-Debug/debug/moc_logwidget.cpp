@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../IMsoftware_client/logwidget.h"
+#include "../../IMsoftware_client/widget/logwidget.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_LogWidget_t {
-    QByteArrayData data[5];
-    char stringdata0[50];
+    QByteArrayData data[12];
+    char stringdata0[193];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,14 +30,25 @@ struct qt_meta_stringdata_LogWidget_t {
 static const qt_meta_stringdata_LogWidget_t qt_meta_stringdata_LogWidget = {
     {
 QT_MOC_LITERAL(0, 0, 9), // "LogWidget"
-QT_MOC_LITERAL(1, 10, 17), // "deal_recv_message"
-QT_MOC_LITERAL(2, 28, 0), // ""
-QT_MOC_LITERAL(3, 29, 1), // "s"
-QT_MOC_LITERAL(4, 31, 18) // "deal_connect_error"
+QT_MOC_LITERAL(1, 10, 14), // "do_CloseClient"
+QT_MOC_LITERAL(2, 25, 0), // ""
+QT_MOC_LITERAL(3, 26, 23), // "on_login_Button_clicked"
+QT_MOC_LITERAL(4, 50, 25), // "on_reg_pushButton_clicked"
+QT_MOC_LITERAL(5, 76, 26), // "on_Exit_pushButton_clicked"
+QT_MOC_LITERAL(6, 103, 17), // "deal_recv_message"
+QT_MOC_LITERAL(7, 121, 1), // "s"
+QT_MOC_LITERAL(8, 123, 18), // "deal_connect_error"
+QT_MOC_LITERAL(9, 142, 14), // "deal_reg_check"
+QT_MOC_LITERAL(10, 157, 15), // "deal_reg_cancel"
+QT_MOC_LITERAL(11, 173, 19) // "deal_close_mainform"
 
     },
-    "LogWidget\0deal_recv_message\0\0s\0"
-    "deal_connect_error"
+    "LogWidget\0do_CloseClient\0\0"
+    "on_login_Button_clicked\0"
+    "on_reg_pushButton_clicked\0"
+    "on_Exit_pushButton_clicked\0deal_recv_message\0"
+    "s\0deal_connect_error\0deal_reg_check\0"
+    "deal_reg_cancel\0deal_close_mainform"
 };
 #undef QT_MOC_LITERAL
 
@@ -47,19 +58,37 @@ static const uint qt_meta_data_LogWidget[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags
+       1,    0,   59,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   24,    2, 0x08 /* Private */,
-       4,    0,   27,    2, 0x08 /* Private */,
+       3,    0,   60,    2, 0x08 /* Private */,
+       4,    0,   61,    2, 0x08 /* Private */,
+       5,    0,   62,    2, 0x08 /* Private */,
+       6,    1,   63,    2, 0x08 /* Private */,
+       8,    0,   66,    2, 0x08 /* Private */,
+       9,    0,   67,    2, 0x08 /* Private */,
+      10,    0,   68,    2, 0x08 /* Private */,
+      11,    0,   69,    2, 0x08 /* Private */,
+
+ // signals: parameters
+    QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    7,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -71,9 +100,26 @@ void LogWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         LogWidget *_t = static_cast<LogWidget *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->deal_recv_message((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 1: _t->deal_connect_error(); break;
+        case 0: _t->do_CloseClient(); break;
+        case 1: _t->on_login_Button_clicked(); break;
+        case 2: _t->on_reg_pushButton_clicked(); break;
+        case 3: _t->on_Exit_pushButton_clicked(); break;
+        case 4: _t->deal_recv_message((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 5: _t->deal_connect_error(); break;
+        case 6: _t->deal_reg_check(); break;
+        case 7: _t->deal_reg_cancel(); break;
+        case 8: _t->deal_close_mainform(); break;
         default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
+        {
+            typedef void (LogWidget::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&LogWidget::do_CloseClient)) {
+                *result = 0;
+                return;
+            }
         }
     }
 }
@@ -103,14 +149,20 @@ int LogWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 9)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 2;
+        _id -= 9;
     }
     return _id;
+}
+
+// SIGNAL 0
+void LogWidget::do_CloseClient()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
 }
 QT_END_MOC_NAMESPACE
