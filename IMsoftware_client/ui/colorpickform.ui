@@ -46,6 +46,19 @@
 	font-size:10pt;
 }
 
+/*顶部按钮定义*/
+#color_main_top QPushButton{
+	border:none;
+	width:24px;
+	height:20px;
+	border-radius:2px;
+}
+#color_main_top QPushButton:hover{
+   border:1px solid rgb(13, 97, 137);
+	background-color:rgb(212, 64, 39);
+   
+}
+
 #color_main_con{
 	
 	background-color: rgb(255, 255, 255);

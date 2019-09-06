@@ -1,26 +1,12 @@
 <RCC>
     <qresource prefix="/">
         <file>icon/龙.png</file>
-        <file>icon/_User Groups.png</file>
-        <file>icon/clock.jpg</file>
-        <file>icon/close.jpg</file>
-        <file>icon/exit.png</file>
-        <file>icon/eye.jpg</file>
-        <file>icon/eye2.jpg</file>
-        <file>icon/help.png</file>
-        <file>icon/min.jpg</file>
-        <file>icon/photo.jpg</file>
-        <file>icon/quit.png</file>
-        <file>icon/search.png</file>
-        <file>icon/set.png</file>
-        <file>icon/weather.jpg</file>
         <file>pic/arrow.png</file>
         <file>pic/arrow_d.png</file>
         <file>pic/arrow_r.png</file>
         <file>pic/arrow_r_g.png</file>
         <file>pic/back.png</file>
         <file>pic/color_panle.png</file>
-        <file>pic/level.png</file>
         <file>pic/qlogo.png</file>
         <file>pic/qq_tool_mail.png</file>
         <file>pic/qq_tool_skin.png</file>
@@ -43,7 +29,6 @@
         <file>pic/wether/3.png</file>
         <file>pic/img/check.png</file>
         <file>pic/img/keyborad.png</file>
-        <file>pic/img/top.png</file>
         <file>pic/img/top2.png</file>
         <file>icon/photo/p1.png</file>
         <file>icon/photo/p2.png</file>

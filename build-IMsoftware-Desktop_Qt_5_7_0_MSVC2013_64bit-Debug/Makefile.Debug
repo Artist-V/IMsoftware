@@ -284,6 +284,7 @@ debug\qrc_res.cpp: ..\IMsoftware_client\res.qrc \
 		..\IMsoftware_client\pic\qq_tool_skin.png \
 		..\IMsoftware_client\pic\arrow_r_g.png \
 		..\IMsoftware_client\pic\qq_tool_talk.png \
+		..\IMsoftware_client\pic\close1.png \
 		..\IMsoftware_client\pic\qqicon_p_gray.png \
 		..\IMsoftware_client\pic\qqicon_q_blue.png \
 		..\IMsoftware_client\pic\arrow_r.png \
@@ -291,7 +292,6 @@ debug\qrc_res.cpp: ..\IMsoftware_client\res.qrc \
 		..\IMsoftware_client\pic\qq_tool_zone.png \
 		..\IMsoftware_client\pic\qqicon_q_gray.png \
 		..\IMsoftware_client\pic\color_panle.png \
-		..\IMsoftware_client\pic\level.png \
 		..\IMsoftware_client\pic\qlogo.png \
 		..\IMsoftware_client\pic\arrow.png \
 		..\IMsoftware_client\pic\search.png \
@@ -305,22 +305,11 @@ debug\qrc_res.cpp: ..\IMsoftware_client\res.qrc \
 		..\IMsoftware_client\pic\img\top2.png \
 		..\IMsoftware_client\pic\img\keyborad.png \
 		..\IMsoftware_client\pic\img\check.png \
-		..\IMsoftware_client\pic\img\top.png \
 		..\IMsoftware_client\pic\wether\2.png \
 		..\IMsoftware_client\pic\wether\1.png \
 		..\IMsoftware_client\pic\wether\3.png \
-		..\IMsoftware_client\icon\help.png \
-		..\IMsoftware_client\icon\photo.jpg \
-		..\IMsoftware_client\icon\min.jpg \
-		..\IMsoftware_client\icon\close.jpg \
-		..\IMsoftware_client\icon\search.png \
-		..\IMsoftware_client\icon\exit.png \
 		..\IMsoftware_client\icon\eye2.jpg \
-		..\IMsoftware_client\icon\clock.jpg \
-		..\IMsoftware_client\icon\quit.png \
 		..\IMsoftware_client\icon\eye.jpg \
-		..\IMsoftware_client\icon\weather.jpg \
-		..\IMsoftware_client\icon\set.png \
 		..\IMsoftware_client\icon\photo\p2.png \
 		..\IMsoftware_client\icon\photo\p6.png \
 		..\IMsoftware_client\icon\photo\p1.png \

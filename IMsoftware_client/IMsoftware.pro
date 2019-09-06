@@ -22,8 +22,7 @@ SOURCES += main.cpp\
     ui/colorpickform.cpp \
     ui/moveableframelesswindow.cpp \
     ui/collapseview.cpp \
-    src/config.cpp \
-    chatform.cpp
+    src/config.cpp
 
 HEADERS  += \
     mythread.h \
@@ -37,8 +36,7 @@ HEADERS  += \
     ui/moveableframelesswindow.h \
     ui/collapseview.h \
     src/singleton.h \
-    src/config.h \
-    chatform.h
+    src/config.h
 
 FORMS    += \
     widget/logwidget.ui \
@@ -47,8 +45,7 @@ FORMS    += \
     ui/collapseviewitem.ui \
     ui/litteriem.ui \
     ui/colorpickform.ui \
-    ui/collapseview.ui \
-    chatform.ui
+    ui/collapseview.ui
 
 RESOURCES += \
     res.qrc
