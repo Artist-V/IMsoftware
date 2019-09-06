@@ -35,7 +35,7 @@ public:
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QStringLiteral("Widget"));
-        Widget->resize(542, 381);
+        Widget->resize(646, 490);
         verticalLayout = new QVBoxLayout(Widget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
